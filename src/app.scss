@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Alegreya+SC|Roboto&display=swap');
+
+$purple: #1d1155;
+$pink: #fa7c91;
+$brown: #757763;
+$beige-light: #d0d1cd;
+$beige-lighter: #eff0eb;
+
+// Update Bulma's global variables
+$family-sans-serif: 'Roboto', sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+$primary: $purple;
+$link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Import only what you need from Bulma
+@import '../node_modules/bulma/sass/utilities/_all.sass';
+@import '../node_modules/bulma/sass/form/_all.sass';
+@import '../node_modules/bulma/sass/base/_all.sass';
+@import '../node_modules/bulma/sass/elements/button.sass';
+@import '../node_modules/bulma/sass/elements/container.sass';
+@import '../node_modules/bulma/sass/elements/form.sass';
+@import '../node_modules/bulma/sass/elements/title.sass';
+@import '../node_modules/bulma/sass/components/navbar.sass';
+@import '../node_modules/bulma/sass/layout/hero.sass';
+@import '../node_modules/bulma/sass/layout/section.sass';
+@import '../node_modules/bulma/sass/layout/footer.sass';
+@import '../node_modules/bulma/sass/components/card.sass';
+@import '../node_modules/bulma/sass/grid/columns.sass';
+@import '../node_modules/bulma/sass/components/modal.sass';
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Alegreya SC', serif;;
+}
+
+.reason {
+  margin: 20% !important;
+  height: 50px !important;
+  width: 50px !important;
+  background-color: #757763 !important;
+  border-radius: 30px !important;
+}
+.border{
+  border: 1px solid rgb(26, 25, 25);
+}
+.heroimage {
+  @include mobile {
+    position: relative;
+    height: 15rem;
+    width: 100%;
+    background: url(./assets/hero-image.jpg) no-repeat center/cover;
+  }
+
+  @include desktop {
+    position: absolute;
+    height: 30rem;
+    width: 40%;
+    background: url(./assets/hero-image.jpg) no-repeat center/cover;
+  }
+  @include widescreen-only {
+    position: absolute;
+    height: 30rem;
+    width: 40%;
+    background: url(./assets/hero-image.jpg) no-repeat center/cover;
+  }
+}
+
+
